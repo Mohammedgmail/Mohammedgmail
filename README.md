@@ -25,7 +25,8 @@ building machine-learning forecasting pipelines for humanitarian operations acro
 <!-- REPOS:START -->
 | Project | What it does | Built with |
 |---|---|---|
-| [**ur-kinematics**](https://github.com/Mohammedgmail/ur-kinematics) | Tested Python kinematics for Universal Robots e-Series arms (UR3e, UR5e, UR10e): forward/inverse kinematics, Jacobian, manipulability. | Python `robotics` `kinematics` `inverse-kinematics` |
+| [**ur-kinematics**](https://github.com/Mohammedgmail/ur-kinematics) | Tested Python kinematics for Universal Robots e-Series arms (UR3e, UR5e, UR10e): forward/inverse kinematics, Jacobian, manipulability. | Python `forward-kinematics` `inverse-kinematics` `kinematics` |
+| [**PGDA**](https://github.com/Mohammedgmail/PGDA) |  |  |
 <!-- REPOS:END -->
 
 <sub>This list refreshes itself every day through GitHub Actions.</sub>
