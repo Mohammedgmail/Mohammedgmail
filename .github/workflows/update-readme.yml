@@ -1,0 +1,42 @@
+name: Update profile README
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "17 6 * * *" # every day at 06:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Test the updater
+        run: |
+          python -m pip install --quiet pytest
+          python -m pytest -q
+      - name: Refresh featured projects
+        env:
+          GITHUB_USER: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FEATURED: "" # e.g. "ur-kinematics,another-repo" to pin an order
+          EXCLUDE: ""
+          MAX_REPOS: "8"
+        run: python scripts/update_repos.py
+      - name: Commit if changed
+        run: |
+          if git diff --quiet README.md; then
+            echo "No changes"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+            git commit -am "Update featured projects"
+            git push
+          fi
