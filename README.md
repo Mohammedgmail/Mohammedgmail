@@ -49,7 +49,7 @@ Paper in preparation for *IEEE Robotics and Automation Letters*.
 
 ## Publications
 
-- **Alfandi, M.** (2026). A scenario-based robust multi-objective optimization framework for
+- **Alfandi, M.** & Seçkiner, S. U.(2026). A scenario-based robust multi-objective optimization framework for
   climate-resilient water-energy systems. *Journal of Cleaner Production*.
   [Article](https://www.sciencedirect.com/science/article/abs/pii/S0959652626020573)
 - **Alfandi, M.** & Seçkiner, S. U. (2025). Renewable energy and greenhouse gas reduction for
