@@ -25,6 +25,7 @@ building machine-learning forecasting pipelines for humanitarian operations acro
 <!-- REPOS:START -->
 | Project | What it does | Built with |
 |---|---|---|
+| [**kurnool-thermal-dev**](https://github.com/Mohammedgmail/kurnool-thermal-dev) |  |  |
 | [**pv-thermal-defect-mapper**](https://github.com/Mohammedgmail/pv-thermal-defect-mapper) | Maps hot cells, failed bypass diodes and offline strings in drone thermal images of a solar farm to the exact module and cell, using the flight plan and pose refinement from the plant itself, then plans a glare-free re-inspection flight. Tested on a thermal digital twin and on a real flight (PV Hawk). | Python `computer-vision` `defect-detection` `digital-twin` |
 | [**pv-drone-inspection-planner**](https://github.com/Mohammedgmail/pv-drone-inspection-planner) | Drone mission planner for thermal inspection of solar farms: finds the valid irradiance window, keeps the sun's reflection out of the camera, splits batteries, exports ArduPilot/QGroundControl missions. Flown and verified in ArduPilot SITL. | Python `ardupilot` `drone` `inspection` |
 | [**ros2-ur-ik-service**](https://github.com/Mohammedgmail/ros2-ur-ik-service) | ROS 2 inverse and forward kinematics services for Universal Robots UR3e, UR5e and UR10e: closed-form, all 8 solutions, closest to the current joint state. Humble and Jazzy, Docker-ready. | Python `docker` `inverse-kinematics` `python` |
@@ -32,7 +33,6 @@ building machine-learning forecasting pipelines for humanitarian operations acro
 | [**robust-moo-water-energy**](https://github.com/Mohammedgmail/robust-moo-water-energy) | Scenario-based robust multi-objective planning of solar water-energy systems under climate, fuel-price and grid uncertainty (Pyomo + HiGHS): CVaR, worst-case, AUGMECON Pareto fronts, TOPSIS. | Python `climate-adaptation` `cvar` `humanitarian` |
 | [**ur3e-reach-rl**](https://github.com/Mohammedgmail/ur3e-reach-rl) | UR3e reaching with reinforcement learning: MuJoCo + Gymnasium environment built from the real DH model, SAC and SAC+HER baselines with trained policies. | Python `gymnasium` `hindsight-experience-replay` `manipulation` |
 | [**ur-kinematics**](https://github.com/Mohammedgmail/ur-kinematics) | Tested Python kinematics for Universal Robots e-Series arms (UR3e, UR5e, UR10e): forward/inverse kinematics, Jacobian, manipulability. | Python `forward-kinematics` `inverse-kinematics` `kinematics` |
-| [**PGDA**](https://github.com/Mohammedgmail/PGDA) |  |  |
 <!-- REPOS:END -->
 
 <sub>This list refreshes itself every day through GitHub Actions.</sub>
